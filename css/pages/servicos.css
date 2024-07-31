@@ -1,0 +1,67 @@
+@import url(../components/header.css);
+@import url(../components/footer.css);
+@import url(../global.css);
+@import url(../reset.css);
+@import url(../variaveis.css);
+
+.section-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-servicos {
+    color: var(--cor-primaria-green-black);
+    font-size: 5vh;
+    padding: 3vh;
+}
+
+.lista-servicos{
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servicos {
+    border-radius: var(--border-radius);
+    padding: 0;
+    max-width: 345px;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.418);
+    margin-top: 4vh;
+}
+
+.imagem-servicos{
+    width: 100%;
+}
+
+.imagem-servicos img{
+    width: 100%;
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+}
+
+.txt-servicos{
+    padding: 2vw;
+    line-height: 5vh;
+    color: var(--cor-primaria-green-black);
+}
+
+.txt-servicos h1{
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.txt-servicos p{
+    text-align: justify;
+}
+
+@media (max-width: 900px) {
+    .lista-servicos{
+        flex-direction: column;
+    }
+    .servicos{
+        width: 70vw;
+    }
+}
+

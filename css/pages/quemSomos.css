@@ -1,0 +1,82 @@
+@import url(../components/header.css);
+@import url(../components/footer.css);
+@import url(../global.css);
+@import url(../reset.css);
+@import url(../variaveis.css);
+
+.section-quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-quem-somos {
+    color: var(--cor-primaria-green-black);
+    font-size: 5vh;
+    padding: 3vh;
+}
+
+.partes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.parte2{
+    flex-direction: row-reverse;
+}
+
+.txt-quem-somos1 {
+    text-align: right;
+    padding-left: 3vw;
+}
+
+.txt-quem-somos p{
+    color: var(--cor-primaria-green-black);
+}
+
+.txt-quem-somos2 {
+    padding-right: 3vw;
+}
+
+.img-quem-somos{
+    width: 550vw;
+}
+
+.img-quem-somos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 790px) {
+    .img-quem-somos{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        padding: 4vw;
+    }
+    .partes {
+        flex-direction: column;
+    }
+
+    .img-quem-somos img {
+        width: 100%;
+    }
+
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+    .titulo-quem-somos {
+        font-size: 4vh;
+    }
+
+    .txt-quem-somos1,
+    .txt-quem-somos2 {
+        text-align: center;
+        padding: 2vh 5vw;
+    }
+}
+

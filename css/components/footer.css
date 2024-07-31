@@ -1,0 +1,31 @@
+@import url(../global.css);
+@import url(../reset.css);
+@import url(../variaveis.css);
+
+footer{
+    background-color: var(--cor-primaria-green-black);
+    color: var(--cor-primaria-white);
+    padding: 3vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer p{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+@media (max-width: 1000px) {
+    footer p{
+        width: 50%;
+        transform: scale(0.5);
+        text-wrap:nowrap;
+        text-align: center;
+    }
+}

@@ -1,0 +1,135 @@
+@import url(../global.css);
+@import url(../reset.css);
+@import url(../variaveis.css);
+
+.header {
+    background-color: var(--cor-secundaria-grey);
+    color: var(--cor-secundaria-black);
+    text-decoration: none;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_container nav{
+    flex-grow: 3;
+}
+
+.logo{
+    padding-right: 30px;
+    width: 15%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.header_container nav a{
+    padding: 0 12px;
+}
+
+.header_container nav a:hover{
+    background-color: var(--cor-primaria-green-black);
+    color: var(--cor-primaria-white);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.header_container button{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transform: translate(0px,0px);
+    width: 170px;
+    height: 47px;
+    border-radius: 8px;
+    font-weight: 400;
+    display: block;
+    font-display:inherit;
+    background-color: var(--cor-primaria-green);
+    color: var(--cor-primaria-white);
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+.header_container button:hover{
+    background-color: var(--cor-primaria-green-black);
+}
+
+@media (max-width: 768px) {
+    .header_container {
+        flex-wrap: wrap;
+        transform: scale(0.8);
+    }
+    .header_container nav a{
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .header_container nav{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .logo{
+        width: 125px;
+    }
+    .header_container button{
+        width: 30%;
+        height: 50%;
+        font-size: 50%;
+        text-align: center;
+        padding: 5px;
+        text-wrap: nowrap;
+        margin: 10px;
+        transform: scale(0.8);
+    }
+    .header_container nav a:hover{
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header_container{
+        display: flex;
+        transform: scale(1.0);
+        align-content: space-between;
+        align-items: center;
+        justify-content: space-between;
+        
+
+    }
+    .header_container button{
+        width: 40%;
+        height: 50%;
+        font-size: 50%;
+        text-align: center;
+        padding: 2px;
+        text-wrap: nowrap;
+        transform: scale(0.7);
+        
+    }
+    .header_container nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: left;
+        width: 9vw;
+
+    }
+    .header_container nav a{
+        text-wrap: nowrap;
+        .logo{
+            width: 125px;
+        }
+    }
+    
+}
